@@ -1,0 +1,73 @@
+/* AMC Medical Tourism Helper — Content Script Styles */
+
+#amc-helper-badge {
+  position: fixed; bottom: 20px; right: 20px; z-index: 2147483647;
+}
+#amc-badge-btn {
+  display: flex; align-items: center; gap: 8px;
+  padding: 10px 18px; border-radius: 24px; border: none; cursor: pointer;
+  background: #0a8a4a; color: #ffffff; font-family: inherit;
+  font-size: 14px; font-weight: 700; box-shadow: 0 4px 14px rgba(10,138,74,0.35);
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+#amc-badge-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(10,138,74,0.45);
+}
+.amc-badge-icon { font-size: 18px; }
+.amc-badge-label { font-size: 14px; }
+
+/* ── Expandable panel ────────────────────────────────────────────────────── */
+#amc-helper-panel {
+  position: fixed; bottom: 76px; right: 20px; z-index: 2147483646;
+  width: 310px; max-width: calc(100vw - 40px);
+  background: #ffffff; border-radius: 14px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+  overflow: hidden; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Helvetica, Arial, sans-serif;
+  border: 1px solid #e2e8f0;
+}
+
+.amc-panel-head {
+  display: flex; align-items: flex-start; justify-content: space-between;
+  padding: 14px 16px 10px; background: #0a8a4a; color: #ffffff;
+}
+.amc-panel-brand { display: flex; flex-direction: column; gap: 2px; }
+.amc-panel-name  { font-size: 15px; font-weight: 700; }
+.amc-panel-cert  { font-size: 11px; opacity: 0.85; }
+.amc-panel-close {
+  background: rgba(255,255,255,0.15); color: #ffffff; border: none;
+  border-radius: 50%; width: 26px; height: 26px; font-size: 18px;
+  cursor: pointer; display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.amc-panel-close:hover { background: rgba(255,255,255,0.25); }
+
+.amc-panel-body {
+  padding: 12px 16px 10px;
+}
+.amc-panel-assmt {
+  font-size: 13px; font-weight: 600; color: #066c3a; margin-bottom: 10px;
+}
+.amc-panel-btns {
+  display: flex; flex-direction: column; gap: 6px;
+}
+.amc-panel-btn {
+  display: flex; align-items: center; gap: 6px;
+  padding: 8px 14px; border-radius: 8px; font-size: 13px; font-weight: 600;
+  text-decoration: none;
+}
+.amc-btn-whats { background: #dcf8c6; color: #075e54; border: 1px solid #a5e0a8; }
+.amc-btn-whats:hover { background: #c5f0b8; }
+.amc-btn-call  { background: #ebf8ff; color: #2c5282; border: 1px solid #bee3f8; }
+.amc-btn-call:hover  { background: #d2effd; }
+.amc-btn-mail  { background: #fffbeb; color: #975a16; border: 1px solid #fbd38d; }
+.amc-btn-mail:hover  { background: #fef3c7; }
+.amc-btn-web   { background: #f7fafc; color: #4a5568; border: 1px solid #e2e8f0; }
+.amc-btn-web:hover   { background: #edf2f7; }
+
+.amc-panel-foot {
+  padding: 10px 16px; border-top: 1px solid #edf2f7; background: #fafafa;
+  font-size: 11px; color: #a0aec0;
+}
+.amc-panel-foot a { color: #718096; }

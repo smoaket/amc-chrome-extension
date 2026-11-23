@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=380" />
+  <title>AMC Medical Tourism Helper</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <header class="popup-header">
+    <div class="brand">
+      <span class="logo" aria-hidden="true">AMC</span>
+      <div class="brand-text">
+        <h1>Arab Medical Center</h1>
+        <p class="tag">HCAC · ISO 9001 · Amman, Jordan</p>
+      </div>
+    </div>
+    <button id="langToggle" class="lang-btn" type="button" aria-label="Toggle language">عربي</button>
+  </header>
+
+  <section class="hero" id="hero">
+    <h2 id="heroTitle">Free 48-Hour Medical File Assessment</h2>
+    <p id="heroBody">
+      Get a treatment plan and cost estimate from Arab Medical Center within 48 hours — all specialties, no obligation.
+    </p>
+  </section>
+
+  <section class="actions">
+    <a id="btnWhats" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+      <span class="ico">💬</span><span id="lblWhats">WhatsApp AMC Now</span>
+    </a>
+    <a id="btnCall" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+      <span class="ico">📞</span><span id="lblCall">Call Patients Relation Office</span>
+    </a>
+    <a id="btnMail" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+      <span class="ico">✉️</span><span id="lblMail">Email info@amc-hospital.com</span>
+    </a>
+    <a id="btnSite" class="btn btn-ghost" target="_blank" rel="noopener noreferrer">
+      <span class="ico">🌐</span><span id="lblSite">Visit AMC Website</span>
+    </a>
+  </section>
+
+  <section class="cost">
+    <h3 id="costTitle">Sample Treatment Costs (USD)</h3>
+    <table aria-label="Cost comparison">
+      <thead>
+        <tr><th id="thProc">Procedure</th><th id="thAmc">AMC</th><th id="thUsa">USA Avg.</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>CABG</td><td>$14–20K</td><td>$123K</td></tr>
+        <tr><td>TAVI</td><td>$40–50K</td><td>$70–90K</td></tr>
+        <tr><td>Total Knee</td><td>$7–8K</td><td>$30–45K</td></tr>
+        <tr><td>BMT (from)</td><td>$25K</td><td>$150–300K</td></tr>
+        <tr><td>Gastric Sleeve (from)</td><td>$2,500</td><td>$15–25K</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="usps">
+    <ul>
+      <li id="usp1">✅ 60–80% lower cost than Western systems</li>
+      <li id="usp2">✅ Zero waiting list — scheduled within days</li>
+      <li id="usp3">✅ Patients from 75+ countries since 1994</li>
+      <li id="usp4">✅ First private-sector BMT lab in Jordan (2014)</li>
+    </ul>
+  </section>
+
+  <footer class="popup-foot">
+    <small id="footText">
+      By Sobhi Moaket · MBD Manager · <a href="https://holylandsmd.com" target="_blank" rel="noopener noreferrer">holylandsmd.com</a>
+    </small>
+  </footer>
+
+  <script src="popup.js"></script>
+</body>
+</html>
